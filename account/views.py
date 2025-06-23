@@ -25,7 +25,7 @@ def user_login(request):
                 return HttpResponse('Niepoprawne dane uwierzytelniające')
         else:
             form = LoginForm()
-    return render(request, 'templates/login.html', {'form': form})
+    return render(request, 'account/login.html', {'form': form})
 
 
 
